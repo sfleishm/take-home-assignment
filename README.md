@@ -22,7 +22,7 @@ In order to solve these questions we'll look towards:
 
 # Dataset
 
-In order to get Johns Hopkins (JH) Dataset let's cloned their repository onto our Desktop.
+In order to get Johns Hopkins (JH) Dataset let's clone their repository onto our Desktop.
 
 1. On the JH github link above, click 'Clone or Download' then click the copy button above 'Download Zip'
 2. With GitBash installed, go to your Desktop, right click, click 'Git Bash Here' and then type the following as well as paste the copied GitHub repository.
@@ -60,16 +60,16 @@ jupyter notebook
 import pandas as pd
 import matplotlib.pyplot as plt 
 ```
-2. When we write 'as pd' after a module import, we are simplifying how we will call the module in the future. So instead of writing 'pandas' or 'matplotlib.pyplot', all we will have to write is 'pd' or 'plt' respectively.
+2. When we write **_as pd_** after a module import, we are simplifying how we will call the module in the future. So instead of writing **_pandas_** or **_matplotlib.pyplot_**, all we will have to write is **_pd_** or **_plt_** respectively.
 
 3. In a new cell, we will then type:
 ```python
 df_time_series_confirmed = pd.read_csv("csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv")
 df_time_series_confirmed.head()
 ```
-* 'df_time_series_confirmed' is telling us the name of a variable that we are assigning our csv to. 
-* 'pd.read_csv' is reading our csv from the same file location as where we have our notebook. If we had the csv in a folder we would have to tell it the path to go to in order to read the csv. 
-* Finally, 'df_time_series_confirmed.head()' will show us the first 5 rows of our csv.
+*  **_df_time_series_confirmed_** is telling us the name of a variable that we are assigning our csv to. 
+* **_pd.read_csv_** is reading our csv from the same file location as where we have our notebook. If we had the csv in a folder we would have to tell it the path to go to in order to read the csv. 
+* Finally, **_df_time_series_confirmed.head()_** will show us the first 5 rows of our csv.
 
 ![](load.PNG?raw=true)
 
@@ -77,7 +77,7 @@ df_time_series_confirmed.head()
 
 * Now that we have our dataset loading properly into a dataframe we can start manipulating our data. 
 
-* In this fictional case study, let's pretend that the company only wants to see data relating to China. 
+* In this fictional case study, let's we only want to see data relating to China. 
 
 1. Let's type:
 ```python
@@ -221,5 +221,7 @@ fig.get_figure().savefig("hubei_cases.png")
 
 ![](five_cases.png?raw=true)
 
-**__**
+## Taking this further
+
+This work was done on only one dataset. Browse the other csv's and see what you can come up with.
 
