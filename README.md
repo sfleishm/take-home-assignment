@@ -49,7 +49,7 @@ jupyter notebook
 ```
 3. After a few seconds a Jupyter Notebook page should open up (mine opens in Chrome) and then navigate to the JH folder.
 4. Here we can see a preview:
-![](jupyterPreview.png?raw=true)
+![](jupyterPreview.PNG?raw=true)
 5. From here, click on 'New' next to 'Upload' and then click 'Python 3' which will create a new notebook in this folder.
 
 ## Working with our Dataset
@@ -71,7 +71,7 @@ df_time_series_confirmed.head()
 * 'pd.read_csv' is reading our csv from the same file location as where we have our notebook. If we had the csv in a folder we would have to tell it the path to go to in order to read the csv. 
 * Finally, 'df_time_series_confirmed.head()' will show us the first 5 rows of our csv.
 
-![](load.png?raw=true)
+![](load.PNG?raw=true)
 
 ## Filtering Data
 
@@ -88,7 +88,7 @@ df_time_series_confirmed_china.head()
 * Since we only want to see cases in China, we will look at the 'Country/Region' column in our dataframe, and look at values with 'China' in them. 
 * In doing so, we have effectively reduced our dataframe to only show instances in China which we can with the code **_df_time_series_confirmed_china.head()_**.
 
-![](step_2.png?raw=true)
+![](step_2.PNG?raw=true)
 
 ## Transposing Data
 
@@ -106,7 +106,7 @@ df_transposed.head(10)
 
 * Then we'll preview the dataframe to make sure everything looks right, in this case I wanted to see 10 rows instead of the normal 5. 
 
-![](step_3T.png?raw=true)
+![](step_3T.PNG?raw=true)
 
 ## Re-formatting our data
 
@@ -139,7 +139,7 @@ df_transposed = df_transposed.rename(columns={'Province/State': 'Date'})
 
 4. At this point our data should look like this:
 
-![](step_4Reformat.png?raw=true)
+![](step_4Reformat.PNG?raw=true)
 
 5. Finally, the first four rows aren't really helping us with anything. For the line plot we'll be making, we only need dates and corresponding cases. Therefore, the first four rows need to go. 
 
@@ -152,7 +152,7 @@ df_transposed.head()
 
 * **_df_transposed.drop([0,1,2,3])_** will remove (.drop) rows specified by index number. This is why it was so important for us to reset our index count earlier, so that at this step we could simply remove the first four rows, (0,1,2,3). 
 
-![](step_5Clean.png?raw=true)
+![](step_5Clean.PNG?raw=true)
 
 ## Creating Visualizations
 
