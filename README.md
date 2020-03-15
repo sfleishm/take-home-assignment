@@ -36,12 +36,15 @@ git clone https://github.com/CSSEGISandData/COVID-19.git 'NameOfFile'
 
 For this step we will be using Jupyter Notebooks, Pandas, and some relatively basic Python code, which I am assuming is installed already. 
 
-1. If you do not have Jupyter Notebooks or Pandas installed we can install them now.
+1. If you do not have Jupyter Notebooks, Pandas, or Matplotlib installed we can install them now.
 ```bash
 pip install notebook
 ```
 ```bash
 pip install pandas
+```
+```bash
+pip install matplotlib
 ```
 2. Next we will open Jupyter notebooks by typing jupyter notebook into the command line.
 ```bash
